@@ -983,7 +983,7 @@
                                                                                                             поръчката!</span></strong></em></span><br>
                                                                                             <span
                                                                                                 style="font-size:20px"><em><span
-                                                                                                        style="color:#000000">{{this.fullName}},
+                                                                                                        style="color:#000000">{{this.firstName}},
                                                                                                         вашата поръчка е
                                                                                                         приета.</span></em></span><br>
                                                                                             &nbsp;
@@ -1034,22 +1034,18 @@
                                                                                                     <td class="mcnCaptionRightImageContent"
                                                                                                         align="center"
                                                                                                         valign="top">
-                                                                                                        <!-- {{#if
-                                                                                                        imageURLs}} -->
+                                                                                                        {{#if
+                                                                                                        imageURLs}}
                                                                                                         <img src="{{imageURLs.thumbnail}}"
                                                                                                             width="176"
                                                                                                             style="max-width:800px;"
                                                                                                             class="mcnImage productimage"
                                                                                                             alt="Product image" />
-                                                                                                        <!-- {{else}}
-                                                                                                    <img src="{{placeholderImage}}"
-                                                                                                        width="50"
-                                                                                                        height="50"
-                                                                                                        alt="" />
-                                                                                                    {{/if}} -->
-
-
-
+                                                                                                        {{else}}
+                                                                                                        <img src="https://flatsome3.uxthemes.com/wp-content/uploads/woocommerce-placeholder.png"
+                                                                                                            class="productimage"
+                                                                                                            alt="" />
+                                                                                                        {{/if}}
                                                                                                     </td>
                                                                                                 </tr>
                                                                                             </tbody>
