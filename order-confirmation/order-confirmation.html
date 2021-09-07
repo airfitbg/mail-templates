@@ -523,6 +523,9 @@
         }
 
         @media only screen and (max-width: 480px) {
+            html {
+                font-size: 14px !important;
+            }
             body {
                 width: 100% !important;
                 min-width: 100% !important;
@@ -537,9 +540,15 @@
 
         }
 
-        @media only screen and (min-width: 480px) {
-            .mcnImage {
-                width: 150px !important;
+        @media screen and (max-width: 480px) {
+            .mcnDividerBlockInner{
+                padding: 18px !important;
+            }
+            #templateFooter {
+                padding-top: 0px !important;
+            }
+            .headerLogoImage {
+                width: 120px !important;
 
             }
 
@@ -585,7 +594,7 @@
 
         @media only screen and (max-width: 480px) {
             .productimage {
-                width: 100px;
+                width: 100px !important;
                 padding-top: 25px !important;
             }
         }
@@ -783,7 +792,7 @@
             .bodyContainer .mcnTextContent,
             .bodyContainer .mcnTextContent p {
                 /*@editable*/
-                font-size: 16px !important;
+                font-size: 0.85rem !important;
                 /*@editable*/
                 line-height: 150% !important;
             }
@@ -851,7 +860,7 @@
                                                                                     src="https://mcusercontent.com/857427397a9dc7b7da6a23b53/images/8ab506c6-6a4b-d368-da69-9f8de5bbbdcc.png"
                                                                                     width="115.99999999999999"
                                                                                     style="max-width:200px; padding-bottom: 0; display: inline !important; vertical-align: bottom;"
-                                                                                    class="mcnImage">
+                                                                                    class="headerLogoImage">
                                                                             </a>
 
                                                                         </td>
@@ -885,34 +894,7 @@
                                     <tr>
                                     <td align="center" valign="top" width="600" style="width:600px;">
                                     <![endif]-->
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                    class="templateContainer">
-                                    <tr>
-                                        <td valign="top" class="bodyContainer">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
-                                                class="mcnDividerBlock" style="min-width:100%;">
-                                                <tbody class="mcnDividerBlockOuter">
-                                                    <tr>
-                                                        <td class="mcnDividerBlockInner"
-                                                            style="min-width:100%; padding:18px;">
-                                                            <table class="mcnDividerContent" border="0" cellpadding="0"
-                                                                cellspacing="0" width="100%" style="min-width:100%;">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <span></span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <!--            
-                <td class="mcnDividerBlockInner" style="padding: 18px;">
-                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
--->
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                
                                     <tr>
                                         <td align="center" valign="top" id="templateBody" data-template-container>
                                             <!--[if (gte mso 9)|(IE)]>
@@ -929,7 +911,7 @@
                                                             <tbody class="mcnDividerBlockOuter">
                                                                 <tr>
                                                                     <td class="mcnDividerBlockInner"
-                                                                        style="min-width:100%; padding:18px;">
+                                                                        style="min-width:100%; padding:36px;">
                                                                         <table class="mcnDividerContent" border="0"
                                                                             cellpadding="0" cellspacing="0" width="100%"
                                                                             style="min-width:100%;">
@@ -977,12 +959,12 @@
 
                                                                                         <p style="text-align: center;">
                                                                                             <span
-                                                                                                style="font-size:22px"><em><strong><span
+                                                                                                style="font-size:1.25rem"><em><strong><span
                                                                                                             style="color:#000000">Благодарим
                                                                                                             ви за
                                                                                                             поръчката!</span></strong></em></span><br>
                                                                                             <span
-                                                                                                style="font-size:20px"><em><span
+                                                                                                style="font-size:1.125rem"><em><span
                                                                                                         style="color:#000000">{{this.firstName}},
                                                                                                         вашата поръчка е
                                                                                                         приета.</span></em></span><br>
@@ -1043,8 +1025,9 @@
                                                                                                             alt="Product image" />
                                                                                                         {{else}}
                                                                                                         <img src="https://flatsome3.uxthemes.com/wp-content/uploads/woocommerce-placeholder.png"
-                                                                                                            class="productimage"
-                                                                                                            alt="" />
+                                                                                                            class="mcnImage productimage"
+                                                                                                            alt="" 
+                                                                                                            style="width: 100px;"/>
                                                                                                         {{/if}}
                                                                                                     </td>
                                                                                                 </tr>
