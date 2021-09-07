@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Template Email</title>
+    <style>
+      html {
+        font-size: 14px;
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      table {
+        width: 100%;
+        border: none;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      td {
+        border-spacing: 0;
+        padding: 0;
+      }
+
+      .wrapperTable > tbody {
+        width: 100%;
+      }
+
+      .section,
+      .footer {
+        max-width: 600px;
+      }
+
+      /*Header*/
+      .header {
+        width: 100%;
+        background-color: black;
+        background-image: url("https://mcusercontent.com/857427397a9dc7b7da6a23b53/images/55ecdb05-e363-4202-5732-6c7ba632fe83.png");
+        background-repeat: repeat;
+      }
+
+      .section>*, .footer>* {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .header figure {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 1.75rem 0.75rem;
+      }
+
+      .headerLogoImg {
+        width: 120px;
+      }
+
+      .gradientWrapper {
+        line-height: 0;
+      }
+
+      .gradientImg {
+        width: 100%;
+        height: 4px ;
+      }
+
+      /* Section */
+      .section {
+        padding: 1.5rem 1rem;
+      }
+
+      /* Footer */
+      .separator {
+        height: 1px;
+        background-color: #c2c2c2;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .footerContent {
+        margin-top: 12px;
+      }
+
+      .footerContent > tbody > tr > td {
+        padding: 6px 0;
+        text-align: center;
+      }
+
+      .socialIcons ul {
+        list-style: none;
+        overflow: hidden;
+        padding: 0;
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+      .socialIcons ul li {
+        width: fit-content;
+        float: left;
+        margin: 0 16px;
+      }
+
+      .footerSiteLink {
+        text-decoration: none;
+        color: #262626;
+        font-weight: bold;
+        line-height: 1.5;
+        font-size: 1.125rem;
+      }
+
+      .footerAddress {
+        color: #262626;
+        line-height: 1.5;
+        margin: 0;
+        font-size: 0.75rem;
+      }
+
+      @media screen and (min-width: 480px) {
+        html {
+          font-size: 16px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <table class="wrapperTable">
+      <tbody>
+        <tr>
+          <td class="header">
+            <table>
+              <tr>
+                <td>
+                  <figure>
+                    <a href="https://airfit.bg" target="_blank">
+                      <img
+                        class="headerLogoImg"
+                        src="https://mcusercontent.com/857427397a9dc7b7da6a23b53/images/8ab506c6-6a4b-d368-da69-9f8de5bbbdcc.png"
+                        alt="Airfit logo"
+                      />
+                    </a>
+                  </figure>
+                </td>
+              </tr>
+              <tr>
+                <td class="gradientWrapper">
+                  <img
+                    class="gradientImg"
+                    src="https://raw.githubusercontent.com/airfitbg/mail-templates/main/gradient.png"
+                    alt="Airfit logo"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="section">This is section</td>
+        </tr>
+        <tr>
+          <td class="footer">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="separator"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <table class="footerContent">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="socialIcons">
+                            <ul>
+                              <li>
+                                <a
+                                  href="https://www.facebook.com/airfitbg"
+                                  target="_blank"
+                                  ><img
+                                    src="https://raw.githubusercontent.com/airfitbg/mail-templates/main/template/facebook.png"
+                                    alt="https://www.facebook.com/airfitbg"
+                                    style="display: block"
+                                    height="24"
+                                    width="24"
+                                    class=""
+                                  />
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.instagram.com/airfitbg/"
+                                  target="_blank"
+                                  ><img
+                                    src="https://raw.githubusercontent.com/airfitbg/mail-templates/main/template/instagram.png"
+                                    alt="https://www.instagram.com/airfitbg/"
+                                    style="display: block"
+                                    height="24"
+                                    width="24"
+                                    class=""
+                                /></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="https://airfit.bg" class="footerSiteLink"
+                            >airfit.bg</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="footerAddress">
+                            ул. “4-та” 4А, София 1387, България <br />
+                            © 2021 Алт Требъл
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
