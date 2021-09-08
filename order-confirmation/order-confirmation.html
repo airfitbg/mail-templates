@@ -10,7 +10,7 @@
     <title>Template Email</title>
     <style>
       html {
-        font-size: 14px;
+        font-size: 12px;
         font-family: sans-serif;
       }
 
@@ -176,18 +176,23 @@
                       style="
                         overflow: hidden;
                         text-align: center;
-                        padding-bottom: 15px;
+                        padding: 1rem 0 3rem;
                         line-height: 2;
                       "
                     >
-                      <strong style="font-size: 1.25rem"
-                        ><i>Благодарим Ви за поръчката!</i></strong
-                      >
+                      <span>
+                        <strong style="font-size: 1.25rem"
+                          ><em>Благодарим Ви за поръчката!</em></strong
+                        >
+                      </span>
                       <br />
-                      <i> {{this.firstName}}, вашата поръчка е приета.</i>
+                      <span style="font-size: 1.125rem">
+                        <em>{{this.firstName}}, вашата поръчка е приета.</em>
+                      </span>
                     </p>
                   </td>
                 </tr>
+                {{#each combinedItems}}
                 <tr>
                   <td>
                     <div style="float: left; width: 30%">
@@ -215,6 +220,7 @@
                     </div>
                   </td>
                 </tr>
+                {{/each}}
                 <tr>
                   <td style="line-height: 0">
                     <div class="separator"></div>
@@ -222,7 +228,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <p style="text-align: right; line-height: 2">
+                    <p style="text-align: right; line-height: 2; font-size: 0.875rem;">
                       Сума: {{billing.subtotal}} <br />
                       Цена за доставка: {{billing.shipping}} <br />
                       ДДС: {{billing.taxes}} <br />
@@ -239,12 +245,13 @@
                 <tr>
                   <td style="font-size: 0.875rem; color: #757575">
                     <div style="line-height: 2.5; float: left; width: 50%">
-                      Информация за доставка <br />{{this.address}} <br />
+                      <strong>Информация за доставка </strong><br />
+                      {{this.address}} <br />
                       Доставчик: <br />
                       Статус на доставка: Не е изпратена
                     </div>
                     <div style="line-height: 2.5; float: right; width: 50%">
-                      Информация за поръчката <br />
+                      <strong>Информация за поръчката</strong> <br />
                       Дата на поръчката: {{orderDate}} <br />
                       Статус на поръчката: <br />
                       Статус на плащането: <br />
