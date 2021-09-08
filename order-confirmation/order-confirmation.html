@@ -90,6 +90,10 @@
       margin: 2rem auto;
     }
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
     .footerContent {
       margin-top: 12px;
     }
@@ -239,19 +243,21 @@
                 </td>
               </tr>
               <tr>
-                <table>
-                  <tr>
-                    <td>
-                      <span style="text-align: right; line-height: 2; font-size: 12px; float: right;" class="normalText">
-                        <span>Сума: {{billing.subtotal}}</span> <br />
-                        <span>Цена за доставка: {{billing.shipping}}</span> <br />
-                        <span>ДДС: {{billing.taxes}}</span> <br />
-                        <br />
-                        <span>Всичко: <strong>{{billing.total}}</strong></span>
-                      </span>
-                    </td>
-                  </tr>
-                </table>
+                <td>
+                    <table>
+                        <tr>
+                          <td>
+                            <span style="text-align: right; line-height: 2; font-size: 12px; float: right;" class="normalText">
+                              <span>Сума: {{billing.subtotal}}</span> <br />
+                              <span>Цена за доставка: {{billing.shipping}}</span> <br />
+                              <span>ДДС: {{billing.taxes}}</span> <br />
+                              <br />
+                              <span>Всичко: <strong>{{billing.total}}</strong></span>
+                            </span>
+                          </td>
+                        </tr>
+                      </table>
+                </td>
               </tr>
               <tr>
                 <td>
