@@ -8,7 +8,7 @@ function compile(filepath, templateInput) {
     const template = Handlebars.compile(templateFile.toString());
     
     const newfilePathSegments = filepath.split("/");
-    newfilePathSegments[newfilePathSegments.length - 1] = "inline-" + newfilePathSegments[newfilePathSegments.length - 1];
+    newfilePathSegments[newfilePathSegments.length - 1] = "compiled-" + newfilePathSegments[newfilePathSegments.length - 1];
     const newFilepath = newfilePathSegments.join("/").replace(".hbs", ".html");
 
     if (typeof templateInput === "string") {
