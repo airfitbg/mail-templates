@@ -1,0 +1,22 @@
+{
+  "name": "mail-templates",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alttreble/mail-templates.git",
+  "author": "tedraykov <tedraykov@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "inline": "node index.js inline",
+    "inline:template": "node index.js inline template/template.html",
+    "compile": "node index.js compile",
+    "compile:order-confirmation": "node index.js compile order-confirmation/order-confirmation.hbs"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "inline-css": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
